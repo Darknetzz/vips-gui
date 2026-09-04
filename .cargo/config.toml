@@ -1,0 +1,15 @@
+# Statically link the Microsoft C runtime.
+#
+# Without this the executable depends on vcruntime140.dll and friends from the
+# Visual C++ Redistributable, which is present on most Windows machines but not
+# all. Linking it in keeps the promise that the binary is one self-contained
+# file that runs from any folder.
+#
+# The cost is a slightly larger executable. The libvips DLLs are a separate
+# matter: they are MinGW-built and bring their own runtime, so this setting does
+# not affect them.
+[target.x86_64-pc-windows-msvc]
+rustflags = ["-C", "target-feature=+crt-static"]
+
+[target.aarch64-pc-windows-msvc]
+rustflags = ["-C", "target-feature=+crt-static"]

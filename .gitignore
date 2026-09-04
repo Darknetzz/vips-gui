@@ -1,0 +1,23 @@
+# Rust build artifacts
+/target/
+**/*.rs.bk
+
+# Debug symbols
+*.pdb
+
+# Test / preview scratch directories created at runtime
+/test-fixtures-tmp/
+/.vips-gui-scratch/
+
+# Editor / OS cruft
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.iml
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.swp
+*~
+.DS_Store
