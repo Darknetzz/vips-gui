@@ -7,6 +7,10 @@ Drag images or folders in, choose a format and its encoder settings, and
 convert. A preview panel shows the selected image before and after, together
 with the exact size the output file will be.
 
+![vips-gui converting a JPEG to AVIF, with the queue on the left, before/after
+preview in the middle, and encoder settings on the
+right](docs/screenshot.png)
+
 ## Requirements
 
 **libvips must be installed separately.** It is not bundled.
