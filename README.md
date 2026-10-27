@@ -1,5 +1,8 @@
 # vips-gui
 
+<p align="center"><img src="docs/images/banner-gradient.png" alt="vips-gui" width="720"></p>
+
+
 A small Windows desktop app for batch-converting images to **JPEG**, **PNG**,
 **WebP** or **AVIF**, using [libvips](https://www.libvips.org/) as the engine.
 
